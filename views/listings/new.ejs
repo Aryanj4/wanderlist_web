@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <form action="/listings", method="post">
-        <input name="title", placeholder="enter title", type="text">
-        <br>
-        <textarea name="description", placeholder="enter description", type="text"></textarea>
-        <br>
-        <input name="image", placeholder="enter image URL", type="text">
-        <br>
-        <input name="price", placeholder="enter price", type="number">
-        <br>
-        <input name="country", placeholder="enter country", type="number">
-        <br>
-        <input name="location", placeholder="enter location", type="text">
-        <br>
+    <h3>Create A New List</h3>
+    <form action="/listings" method="POST">
+        <input name="listing[title]" placeholder="enter title" type="text">
+        <br><br>
+        <textarea name="listing[description]" placeholder="enter description"></textarea>
+        <br><br>
+        <input name="listing[image][url]" placeholder="enter image URL" type="text">
+        <br><br>
+        <input name="listing[price]" placeholder="enter price" type="number">
+        <br><br>
+        <input name="listing[country]" placeholder="enter country" type="text">
+        <br><br>
+        <input name="listing[location]" placeholder="enter location" type="text">
+        <br><br>
         <button>Add</button>
     </form>
 </body>
+
 </html>
