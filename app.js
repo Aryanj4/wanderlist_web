@@ -27,6 +27,7 @@ app.get("/", (req, res) => {
   res.send("Hi, I am root");
 });
 
+//Index Route
 app.get("/listings", async (req, res) => {
     const allListings = await Listing.find({});
     res.render("listings/index.ejs", {allListings});
