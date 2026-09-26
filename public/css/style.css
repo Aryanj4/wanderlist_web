@@ -97,3 +97,17 @@ body {
 .edit-btn {
     background-color: #fe424d !important;
 }
+
+/* Show Page */
+.show-img {
+    height: 30vh;
+}
+
+.show-btns {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.show-btns a, button {
+    background-color: #fe424d !important;
+}
